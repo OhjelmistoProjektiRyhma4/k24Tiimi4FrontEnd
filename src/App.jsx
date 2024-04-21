@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import TabsMUI from '../TabsMUI'
-import Frontpage from '../components/Frontpage'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import TabsMUI from "../TabsMUI";
+import Frontpage from "../components/Frontpage";
 
 function App() {
-
   return (
     /*<div>
 
@@ -14,17 +13,7 @@ function App() {
     </div>*/
 
     <TabsMUI TabsMUI={Frontpage} />
-  )
-
-
-
-
-
-
+  );
 }
 
-export default App
-
-
-
-
+export default App;
