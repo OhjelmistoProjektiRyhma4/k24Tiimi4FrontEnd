@@ -39,7 +39,7 @@ export default function ProductList() {
     },
     {
       headerName: "Hinta",
-      field: "price",
+      field: "price", valueFormatter: p => p.value + ' €',
       filter: true,
       floatingFilter: true,
       flex: 1,
