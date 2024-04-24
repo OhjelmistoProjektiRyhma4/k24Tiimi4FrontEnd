@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import TabsMUI from "../TabsMUI";
 import Frontpage from "../components/Frontpage";
+import AboutUs from "../components/AboutUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     </div>*/
 
     <TabsMUI TabsMUI={Frontpage} />
+
   );
 }
 
