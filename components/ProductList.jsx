@@ -12,6 +12,7 @@ export default function ProductList() {
       size: "",
       price: "",
       manufacturer: "",
+      stock: "",
     },
   ]);
 
@@ -40,6 +41,13 @@ export default function ProductList() {
     {
       headerName: "Hinta",
       field: "price", valueFormatter: p => p.value + ' €',
+      filter: true,
+      floatingFilter: true,
+      flex: 1,
+    },
+    {
+      headerName: "määrä",
+      field: "stock",
       filter: true,
       floatingFilter: true,
       flex: 1,
