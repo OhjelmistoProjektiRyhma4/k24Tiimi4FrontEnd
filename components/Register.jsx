@@ -10,8 +10,8 @@ import DialogTitle from "@mui/material/DialogTitle";
 function Register() {
   const [open, setOpen] = useState(false);
   const [customer, setCustomer] = useState({
-    firstname: "",
-    lastname: "",
+    firstName: "",
+    lastName: "",
     phone: "",
     email: "",
     address: "",
@@ -36,7 +36,7 @@ function Register() {
   };
 
   const handleSave = (customer) => {
-    fetch("...........................................", {
+    fetch("http://localhost:8080/customers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,6 +47,7 @@ function Register() {
         if (!res.ok) {
           throw Error(console.log(res.statusText));
         }
+        console.log("okk")
       })
       .catch((err) => console.log(err));
   };
@@ -68,8 +69,8 @@ function Register() {
             autoFocus
             required
             margin="dense"
-            name="firstname"
-            value={customer.firstname}
+            name="firstName"
+            value={customer.firstName}
             onChange={(e) => handleInputChange(e)}
             label="Etunimi"
             variant="standard"
@@ -78,8 +79,8 @@ function Register() {
             autoFocus
             required
             margin="dense"
-            name="lastname"
-            value={customer.lastname}
+            name="lastName"
+            value={customer.lastName}
             onChange={(e) => handleInputChange(e)}
             label="Sukunimi"
             variant="standard"
@@ -109,10 +110,10 @@ function Register() {
             autoFocus
             required
             margin="dense"
-            name="Sähköposti"
+            name="email"
             value={customer.email}
             onChange={(e) => handleInputChange(e)}
-            label="Email"
+            label="Sposti"
             variant="standard"
           />
           <TextField

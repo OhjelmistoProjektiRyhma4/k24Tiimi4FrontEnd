@@ -76,7 +76,7 @@ export default function ProductList() {
     fetchProducts();
   }, []);
 
-  console.log(colDef);
+  console.log();
 
   return (
     <div
